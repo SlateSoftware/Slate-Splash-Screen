@@ -1,0 +1,19 @@
+{
+    "KPackageStructure": "Plasma/LookAndFeel/Splash",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "",
+                "Name": "SlateDesktopTeam"
+            }
+        ],
+        "Category": "",
+        "Description": "",
+        "Id": "SlateDesktopSplashScreen",
+        "License": "GPLv3",
+        "Name": "SlateDesktopSplashScreen",
+        "Website": ""
+    },
+    "X-Plasma-APIVersion": "2"
+}
+
