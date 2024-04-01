@@ -4,14 +4,14 @@
         "Authors": [
             {
                 "Email": "",
-                "Name": "SlateDesktopTeam"
+                "Name": "Slate Desktop Team"
             }
         ],
         "Category": "",
         "Description": "",
         "Id": "SlateDesktopSplashScreen",
         "License": "GPLv3",
-        "Name": "SlateDesktopSplashScreen",
+        "Name": "Slate Desktop Splash Screen",
         "Website": ""
     },
     "X-Plasma-APIVersion": "2"
