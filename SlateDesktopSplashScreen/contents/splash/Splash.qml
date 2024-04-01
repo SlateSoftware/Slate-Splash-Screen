@@ -47,7 +47,7 @@ Image {
             text: "Slate Desktop"
             color: "#ffffff" // Text color
             font {
-                family: "Segoe UI Variable Static Display";
+                family: "DM Sans 36pt";
                 styleName: "Semibold";
                 pixelSize: 46;
             }
