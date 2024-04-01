@@ -2,19 +2,20 @@ import QtQuick 2.15
 import QtQuick.Controls 2.15
 import QtQuick.Layouts 1.15
 
-Rectangle {
+Image {
     id: container
     width: 400
     height: 200
-    color: "#2e2e2e" // Background color
+    source: "images/back.png" // Provide the path to your image file
 
     Rectangle {
-        id: splashRect
-        width: container.width * 0.40
-        height: container.height * 0.20
-        border.color: "#ffffff"
+        id: container1
+        width: container.width * 0.25
+        height: container.height * 0.15
         color: "transparent"
         radius: 30
+        border.color: "#ffffff"
+
         anchors.centerIn: parent
 
         // Border animation
@@ -22,29 +23,33 @@ Rectangle {
             id: borderAnimation
             loops: Animation.Infinite
             running: true
+
             PropertyAnimation {
-                target: splashRect
+                target: container1
                 property: "border.color"
                 to: "#00B2FF"
                 duration: 225
                 easing.type: Easing.InOutQuad
             }
+
             PropertyAnimation {
-                target: splashRect
+                target: container1
                 property: "border.width"
                 to: 3
                 duration: 225
                 easing.type: Easing.InOutQuad
             }
+
             PropertyAnimation {
-                target: splashRect
+                target: container1
                 property: "border.color"
                 to: "#ffffff"
                 duration: 225
                 easing.type: Easing.InOutQuad
             }
+
             PropertyAnimation {
-                target: splashRect
+                target: container1
                 property: "border.width"
                 to: 2
                 duration: 225
@@ -57,7 +62,9 @@ Rectangle {
             text: "Slate Desktop"
             color: "#ffffff" // Text color
             font.pixelSize: 24
-            anchors.centerIn: splashRect
+            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.top: parent.top
+            anchors.topMargin: 45 // Adjust the top margin as needed
         }
 
         Text {
@@ -65,9 +72,10 @@ Rectangle {
             text: "is running"
             color: "#ffffff" // Text color
             font.pixelSize: 16
-            anchors.horizontalCenter: splashRect.horizontalCenter
+            anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: mainText.bottom
             anchors.topMargin: 10
+            horizontalAlignment: Text.AlignHCenter // Align text horizontally center
         }
     }
 }
