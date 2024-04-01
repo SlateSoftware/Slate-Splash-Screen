@@ -10,12 +10,12 @@ Image {
 
     Rectangle {
         id: container1
-        width: container.width * 0.17
-        height: container.height * 0.12
+        width: container.width * 0.21
+        height: container.height * 0.17
         color: "transparent"
         radius: 20
 
-        border.color: "#ffffff"
+        border.color: "#303030"
 
         anchors.centerIn: parent
 
@@ -36,7 +36,7 @@ Image {
             PropertyAnimation {
                 target: container1
                 property: "border.color"
-                to: "#7f7f7f"
+                to: "#303030"
                 duration: 800
                 easing.type: Easing.InOutQuad
             }
@@ -46,16 +46,20 @@ Image {
             id: mainText
             text: "Slate Desktop"
             color: "#ffffff" // Text color
-            font.pixelSize: 24
+            font {
+                family: "Segoe UI Variable Static Display";
+                styleName: "Semibold";
+                pixelSize: 46;
+            }
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: 35 // Adjust the top margin as needed
+            anchors.topMargin: 44 // Adjust the top margin as needed
         }
 
         Text {
             id: subtitleText
-            text: "starting..."
-            color: "#7f7f7f" // Text color
+            text: "Starting..."
+            color: "#ffffff" // Text color
             font.pixelSize: 13
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: mainText.bottom
