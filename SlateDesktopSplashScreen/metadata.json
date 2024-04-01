@@ -3,15 +3,13 @@
     "KPlugin": {
         "Authors": [
             {
-                "Email": "",
                 "Name": "Slate Desktop Team"
             }
         ],
-        "Category": "",
-        "Description": "",
+        "Description": "Splashscreen for Slate Desktop One",
         "Id": "SlateDesktopSplashScreen",
         "License": "GPLv3",
-        "Name": "Slate Desktop Splash Screen",
+        "Name": "Slate Desktop One",
         "Website": ""
     },
     "X-Plasma-APIVersion": "2"
