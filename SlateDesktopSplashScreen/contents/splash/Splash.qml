@@ -10,10 +10,11 @@ Image {
 
     Rectangle {
         id: container1
-        width: container.width * 0.25
-        height: container.height * 0.15
+        width: container.width * 0.17
+        height: container.height * 0.12
         color: "transparent"
-        radius: 30
+        radius: 20
+
         border.color: "#ffffff"
 
         anchors.centerIn: parent
@@ -28,31 +29,15 @@ Image {
                 target: container1
                 property: "border.color"
                 to: "#00B2FF"
-                duration: 225
-                easing.type: Easing.InOutQuad
-            }
-
-            PropertyAnimation {
-                target: container1
-                property: "border.width"
-                to: 3
-                duration: 225
+                duration: 800
                 easing.type: Easing.InOutQuad
             }
 
             PropertyAnimation {
                 target: container1
                 property: "border.color"
-                to: "#ffffff"
-                duration: 225
-                easing.type: Easing.InOutQuad
-            }
-
-            PropertyAnimation {
-                target: container1
-                property: "border.width"
-                to: 2
-                duration: 225
+                to: "#7f7f7f"
+                duration: 800
                 easing.type: Easing.InOutQuad
             }
         }
@@ -64,14 +49,14 @@ Image {
             font.pixelSize: 24
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: parent.top
-            anchors.topMargin: 45 // Adjust the top margin as needed
+            anchors.topMargin: 35 // Adjust the top margin as needed
         }
 
         Text {
             id: subtitleText
-            text: "is running"
-            color: "#ffffff" // Text color
-            font.pixelSize: 16
+            text: "starting..."
+            color: "#7f7f7f" // Text color
+            font.pixelSize: 13
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: mainText.bottom
             anchors.topMargin: 10
