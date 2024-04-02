@@ -48,7 +48,7 @@ Image {
             color: "#ffffff" // Text color
             font {
                 family: "DM Sans 36pt";
-                styleName: "Semibold";
+                styleName: "Medium";
                 pixelSize: 46;
             }
             anchors.horizontalCenter: parent.horizontalCenter
@@ -60,7 +60,11 @@ Image {
             id: subtitleText
             text: "Starting..."
             color: "#ffffff" // Text color
-            font.pixelSize: 13
+            font {
+                family: "DM Sans 36pt";
+                styleName: "Medium";
+                pixelSize: 13;
+            }
             anchors.horizontalCenter: parent.horizontalCenter
             anchors.top: mainText.bottom
             anchors.topMargin: 10
